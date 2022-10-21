@@ -1,0 +1,32 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  location: String
+}
+
+type Park {
+  id: ID!
+  name: String
+}
+
+type Breed {
+  id: ID!
+  name: String!
+  parent: Int
+}
+type Image {
+    id: ID!
+    breed_id: Int
+    url: String
+},
+
+type Query {
+  users: [User!]!
+  breeds: [String!]!
+  images: [String]!
+  breed(type: String!): [String]!
+}
+
+
+
