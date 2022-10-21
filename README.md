@@ -105,6 +105,11 @@ See the corresponding polymorphic functions in Models/Api (Breedable, Userable, 
 ## BONUS 2
 I also developed a UI Portal which can help consume the API with just view clicks
 Please, use routes in the web.php file
+
+Route::get('/', [\App\Http\Controllers\Portal\ExternalBreedController::class, 'index'])->name('portal_index');
+
+OR
+
 Route::get('/portal', [\App\Http\Controllers\Portal\ExternalBreedController::class, 'index'])->name('portal_index');
 
 [Screenshot 1](https://github.com/cbin100/Dog-Api-with-Laravel-9-by-CBIN100/blob/main/screenshots/Screenshot%202022-10-21%20023714.png)
